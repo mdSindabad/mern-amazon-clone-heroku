@@ -1,0 +1,339 @@
+.page-container {
+  position: relative;
+  top: 3rem;
+  padding-bottom: 5rem;
+}
+/*---------------------------------------------------
+-------------------NavBar Style--------------------
+---------------------------------------------------*/
+.nav-menu {
+  background: #131921;
+  padding: 0.5rem;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.logo img {
+  max-width: 100px;
+  background-color: transparent;
+  filter: invert(100%) sepia(3%) saturate(7500%) hue-rotate(99deg)
+    brightness(105%) contrast(105%);
+}
+.nav-title {
+  text-transform: capitalize;
+  color: rgb(113, 219, 118);
+  cursor: pointer;
+}
+.nav-menu ul {
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+}
+.nav-menu li {
+  list-style-type: none;
+  font-size: 1rem;
+  margin-top: 0;
+  text-align: end;
+}
+.nav-menu li.cart {
+  font-size: 1.5rem;
+}
+.nav-menu li:hover {
+  color: #febd69;
+}
+.nav-menu a {
+  color: #f7f8fb;
+}
+.nav-menu a:hover {
+  text-decoration: none;
+}
+
+/*---------------------------------------------------
+-------------------Banner Style--------------------
+---------------------------------------------------*/
+.banner {
+  height: 50vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(234, 237, 237, 0.5)
+    ),
+    url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Home_v2_en_US_2x._CB429090087_.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+
+/*---------------------------------------------------
+-------------------Products Style--------------------
+---------------------------------------------------*/
+.product-container {
+  margin-top: -6rem;
+}
+.product {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-basis: 32%;
+  cursor: pointer;
+}
+.product:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.product-img img {
+  max-height: 200px;
+  width: auto;
+  margin: 0.5rem auto;
+}
+
+/*---------------------------------------------------
+-------------------Product Item Style--------------------
+---------------------------------------------------*/
+.product-details .price {
+  color: #b12704;
+}
+.product-details .star {
+  color: #febd69;
+}
+.in-stock {
+  color: #007600;
+}
+.out-stock {
+  color: #b12704;
+}
+.add-to-cart-btn,
+.checkout {
+  background: hsla(34, 99%, 70%, 0.8);
+}
+.add-to-cart-btn:hover,
+.checkout:hover {
+  background: hsla(34, 99%, 70%, 1);
+}
+
+/*---------------------------------------------------
+-------------------Cart Style--------------------
+---------------------------------------------------*/
+.cart {
+  margin-top: 2rem;
+  position: relative;
+}
+.cart-item {
+  background: #fff;
+  margin-bottom: 0.2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.5rem 0.5rem #bbb;
+}
+.cart-item img {
+  width: 4rem;
+  padding-top: 0.5rem;
+}
+.cart-titles {
+  border-bottom: 1.5px solid #bbb;
+  margin-bottom: 1rem;
+}
+.price-title {
+  text-align: end;
+  margin-bottom: 0;
+}
+.product-name {
+  color: #007185;
+}
+.delete-btn {
+  margin-left: 1rem;
+}
+.product-price {
+  text-align: end;
+}
+.cart-badge {
+  width: 1rem;
+  height: 1rem;
+  background: hsla(34, 99%, 70%, 1);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #000;
+  font-weight: 500;
+}
+.cart-checkout {
+  padding: 1.5rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(168, 202, 204);
+  box-shadow: 0 0.5rem 0.5rem #bbb;
+}
+
+/*---------------------------------------------------
+-------------------Registration/ Sign-in Page Style--------------------
+---------------------------------------------------*/
+.registration,
+.sign-in {
+  border: 1px solid #bbb;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+.title-logo {
+  display: flex;
+  justify-content: center;
+}
+.title-logo img {
+  max-width: 100px;
+}
+.res-btn {
+  background: hsla(34, 99%, 70%, 0.8);
+}
+.res-btn:hover {
+  background: hsla(34, 99%, 70%, 1);
+}
+.registration label {
+  margin: 0.5rem 0 0;
+}
+.sign-in-mini-title {
+  text-align: center;
+}
+.sign-in-mini-title {
+  position: relative;
+}
+.sign-in-mini-title::after,
+.sign-in-mini-title::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid #bbb;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+}
+.sign-in-mini-title::before {
+  transform: translate(-102%, 100%);
+}
+.sign-in-mini-title::after {
+  transform: translate(2%, 100%);
+}
+.create-acc-btn {
+  padding: 0.2rem 0.6rem;
+  background: #e7e9ec;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+}
+.create-acc-btn:hover {
+  background: #c4c4c5c2;
+}
+.input-error {
+  color: red;
+}
+
+/*---------------------------------------------------
+-------------------Shipping Style--------------------
+---------------------------------------------------*/
+.shipping {
+  border: 1.5px solid #bbb;
+  padding: 2rem 1rem;
+  border-radius: 0.4rem;
+}
+.process-wizard {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1rem auto;
+}
+.process-wizard div {
+  border-top: 0.3rem solid #bbb;
+  color: #333;
+  flex: 1 1;
+}
+.process-wizard .active {
+  border-top: 0.3rem solid hsla(34, 99%, 70%, 1);
+  color: hsla(34, 99%, 70%, 1);
+}
+
+/*---------------------------------------------------
+-------------------Order Page Style--------------------
+---------------------------------------------------*/
+table {
+  width: 100%;
+}
+.table-right-items {
+  text-align: end;
+}
+.order-total {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: crimson;
+}
+.order-page-custom-rows {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95vw;
+  background: rgb(168, 170, 170);
+  margin-top: 0.5rem !important;
+  padding: 0.2rem !important;
+  border-radius: 0.3rem;
+}
+.order-items-row {
+  width: 100%;
+  display: flex;
+  border-bottom: 0.1rem solid #bbb;
+  align-items: baseline;
+}
+.order-price-title {
+  margin-left: auto;
+}
+.order-item {
+  padding-top: 0.5rem;
+  display: flex;
+  margin-top: 0.5rem;
+  background-color: rgb(133, 206, 176);
+  border-radius: 0.3rem;
+}
+.order-item img {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+.order-item-price {
+  margin-left: auto;
+}
+.full-length-header {
+  margin-bottom: 1rem;
+}
+
+/*---------------------------------------------------
+-------------------Footer Style--------------------
+---------------------------------------------------*/
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #131921;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+/*---------------------------------------------------
+-------------------Media Queries--------------------
+---------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    max-width: 60px;
+  }
+  .nav-menu li {
+    font-size: 0.8rem;
+  }
+  .process-wizard {
+    width: 97%;
+  }
+}
